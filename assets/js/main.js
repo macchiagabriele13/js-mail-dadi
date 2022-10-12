@@ -1,14 +1,14 @@
 /* Mail */
 
 /* Chiedi all’utente la sua email, */
-const insertMail = prompt("Inserisci la tua email");
+/* const insertMail = prompt("Inserisci la tua email");
 console.log(insertMail);
-
+ */
 
 
 
 /* Creo una lista di mail valide */
-
+/* 
 const validMail = [
     "sr.lele13@libero.it" ,
     "macchia_gabriele13@gmail.com",
@@ -40,7 +40,7 @@ if (message = true) {
 } else {
 userMessage.innerHTML = "Ops, qualcosa è andato storto"
 }
-
+ */
 
 
 /* controlla che sia nella lista di chi può accedere, */ 
@@ -63,33 +63,29 @@ const generaButton = document.getElementById('btn_genera');
 
 generaButton.addEventListener("click", function () {
 
-
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        
-    }
-
-
-    let userResult = Math.floor(Math.random() *10 )
+    let userResult = Math.floor(Math.random() * 6 )
     document.getElementById('user').innerHTML = userResult
     console.log(userResult)
 
-    let cpuResult = Math.floor(Math.random() *10 )
+    let cpuResult = Math.floor(Math.random() * 6 )
     document.getElementById('cpu').innerHTML = cpuResult
     console.log(cpuResult)
 
-let pair = (userResult === cpuResult)
+    let pair = (userResult === cpuResult);
+    let winner;
 
-    if (pair) {
+    if (userResult > cpuResult) {
+        winner = "player"
+    } else if (userResult > cpuResult) {
+        winner = "cpu"
+    } else {
+        let userResult = Math.floor(Math.random() * 6 )
+    document.getElementById('user').innerHTML = userResult
+    console.log(userResult)
 
-            let userResult = Math.floor(Math.random() *10 )
-            document.getElementById('user').innerHTML = userResult
-            console.log(userResult)
-        
-            let cpuResult = Math.floor(Math.random() *10 )
-            document.getElementById('cpu').innerHTML = cpuResult
-            console.log(cpuResult)
-        
+    let cpuResult = Math.floor(Math.random() * 6 )
+    document.getElementById('cpu').innerHTML = cpuResult
+    console.log(cpuResult)
     }
 
 })
