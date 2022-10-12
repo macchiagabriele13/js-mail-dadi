@@ -1,15 +1,15 @@
 /* Mail */
 
 /* Chiedi all’utente la sua email, */
-const insertMail = prompt("Inserisci la tua email");
-console.log(insertMail);
+/* const insertMail = prompt("Inserisci la tua email");
+console.log(insertMail); */
 
 
 
 
 /* Creo una lista di mail valide */
 
-const validMail = [
+/* const validMail = [
     "sr.lele13@libero.it" ,
     "macchia_gabriele13@gmail.com",
     "gabrielemacchia@libero.it",
@@ -17,29 +17,29 @@ const validMail = [
     "provaprova@gmail.com",
 ]
 
-let message = 'ERRORE';
-console.log(message);
+let message;
+
 
 for (let i = 0; i < validMail.length; i++) {
     const validMailElement = validMail[i];
     console.log(validMailElement);
     
     if (insertMail === validMailElement) {
-        message = "Benvenuto";
+        message = true ;
         console.log(message);
     }
 }
 
 let userMessage = document.querySelector("h1");
 
-if (message = "Benvenuto") {
+if (message = true ) {
 
     userMessage.innerHTML = "Benvenuto"
     
 } else {
 userMessage.innerHTML = "Ops, qualcosa è andato storto"
 }
-
+ */
 
 
 /* controlla che sia nella lista di chi può accedere, */ 
@@ -58,6 +58,24 @@ userMessage.innerHTML = "Ops, qualcosa è andato storto"
 /* Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto. */
 
+const generaButton = document.getElementById('btn_genera');
+
+generaButton.addEventListener("click", function () {
+    let userResult = Math.floor(Math.random() *10 )
+    document.getElementById('user').innerHTML = userResult
+    console.log(userResult)
+
+    let cpuResult = Math.floor(Math.random() *10 )
+    document.getElementById('cpu').innerHTML = cpuResult
+    console.log(cpuResult)
+})
+
+for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    
+}
+
+    
 
 
 
