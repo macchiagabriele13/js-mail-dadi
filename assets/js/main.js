@@ -1,15 +1,15 @@
 /* Mail */
 
 /* Chiedi all’utente la sua email, */
-/* const insertMail = prompt("Inserisci la tua email");
-console.log(insertMail); */
+const insertMail = prompt("Inserisci la tua email");
+console.log(insertMail);
 
 
 
 
 /* Creo una lista di mail valide */
 
-/* const validMail = [
+const validMail = [
     "sr.lele13@libero.it" ,
     "macchia_gabriele13@gmail.com",
     "gabrielemacchia@libero.it",
@@ -17,29 +17,30 @@ console.log(insertMail); */
     "provaprova@gmail.com",
 ]
 
-let message;
+let message = false;
 
 
 for (let i = 0; i < validMail.length; i++) {
     const validMailElement = validMail[i];
     console.log(validMailElement);
     
-    if (insertMail === validMailElement) {
+    if (insertMail == validMailElement) {
         message = true ;
-        console.log(message);
     }
+
 }
+
 
 let userMessage = document.querySelector("h1");
 
-if (message = true ) {
+if (message = true) {
 
     userMessage.innerHTML = "Benvenuto"
     
 } else {
 userMessage.innerHTML = "Ops, qualcosa è andato storto"
 }
- */
+
 
 
 /* controlla che sia nella lista di chi può accedere, */ 
@@ -61,6 +62,14 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. St
 const generaButton = document.getElementById('btn_genera');
 
 generaButton.addEventListener("click", function () {
+
+
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        
+    }
+
+
     let userResult = Math.floor(Math.random() *10 )
     document.getElementById('user').innerHTML = userResult
     console.log(userResult)
@@ -68,13 +77,22 @@ generaButton.addEventListener("click", function () {
     let cpuResult = Math.floor(Math.random() *10 )
     document.getElementById('cpu').innerHTML = cpuResult
     console.log(cpuResult)
+
+let pair = (userResult === cpuResult)
+
+    if (pair) {
+
+            let userResult = Math.floor(Math.random() *10 )
+            document.getElementById('user').innerHTML = userResult
+            console.log(userResult)
+        
+            let cpuResult = Math.floor(Math.random() *10 )
+            document.getElementById('cpu').innerHTML = cpuResult
+            console.log(cpuResult)
+        
+    }
+
 })
-
-for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    
-}
-
     
 
 
