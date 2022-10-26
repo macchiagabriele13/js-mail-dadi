@@ -1,14 +1,14 @@
 /* Mail */
 
 /* Chiedi all’utente la sua email, */
-/* const insertMail = prompt("Inserisci la tua email");
+const insertMail = prompt("Inserisci la tua email");
 console.log(insertMail);
- */
+
 
 
 
 /* Creo una lista di mail valide */
-/* 
+
 const validMail = [
     "sr.lele13@libero.it" ,
     "macchia_gabriele13@gmail.com",
@@ -40,7 +40,7 @@ if (message = true) {
 } else {
 userMessage.innerHTML = "Ops, qualcosa è andato storto"
 }
- */
+
 
 
 /* controlla che sia nella lista di chi può accedere, */ 
